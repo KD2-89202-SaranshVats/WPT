@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const value = prompt("Enter first Positive Number:- ")
+        console.log(value)
+        if(parseInt(value)>0){
+            const value1 = prompt("Enter Second Positive Number:- ")
+            console.log(value1)
+            if(parseInt(value1)<0){
+                alert("Plese Enter Valid Positive Numbers!")
+                let value2 = 0
+                do{
+                    value2 = prompt("Enter again Second Positive Number:- ")
+                    console.log(parseInt(value2))
+                }while(parseInt(value2)<0)  
+
+                const value3 = prompt("Enter Third Positive Number:- ")
+                console.log(value3)
+
+                alert("The largest number is: "+Math.max(value,value2,value3))
+            }
+
+            else{
+                const value4 = prompt("Enter Third Positive Number:- ")
+                console.log(value4)
+                alert("The largest number is: "+Math.max(value,value1,value4))
+            }
+        }
+        else{
+            alert("Plese Enter Valid Positive Numbers!")
+        }
+
+    </script>
+</body>
+</html>

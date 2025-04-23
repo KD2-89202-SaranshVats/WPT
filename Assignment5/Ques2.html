@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const value = parseInt(prompt("Enter the number of times to print the message"))
+        console.log(value)
+        let init = value
+        if(value<0){
+            alert("Please enter a valid positive integer!")
+            do{
+                value1 = parseInt(prompt("Enter the number of times to print the meassage."))
+            }while(value1<0)
+            init=value1
+        }
+        const value2 = prompt("Enter the Message:")
+        alert("Check the console for the repated messages!")
+        for(let i = 0 ; i < init ; i++){
+            console.log(value2)
+        }
+    </script>
+</body>
+</html>
